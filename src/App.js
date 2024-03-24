@@ -98,17 +98,19 @@ function App() {
               <div className="img projectImg"></div>
               <div className="inf">
                 <p className="title">resume</p>
-                <br />
+
                 <p>مهارت های استفاده شده</p>
-                <p>reactjs , sass </p>
-                <a href="http://google.com">بیش تر</a>
+                <p>reactjs , sass , figma </p>
+                <a target="_blank" href="https://github.com/yousefem/resum">
+                  بیش تر
+                </a>
               </div>
             </div>
             <div className="item" id="item2">
               <div className="img projectImg"></div>
               <div className="inf">
                 <p className="title">title</p>
-                <br />
+
                 <p>
                   من چهار سال &nbsp;<a href="http://google.com">بیش تر</a>
                 </p>
@@ -119,17 +121,18 @@ function App() {
               <div className="img projectImg"></div>
               <div className="inf">
                 <p className="title">title</p>
-                <br />
+
                 <p>
-                  من چهار سال &nbsp;<a href="http://google.com">بیش تر</a>
+                  من چهار سال 
                 </p>
+                <a href="http://google.com">بیش تر</a>
               </div>
             </div>
             <div className="item " id="item4">
               <div className="img projectImg"></div>
               <div className="inf">
                 <p className="title">title</p>
-                <br />
+
                 <p>
                   من چهار سال &nbsp;<a href="http://google.com">بیش تر</a>
                 </p>

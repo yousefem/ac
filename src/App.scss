@@ -24,223 +24,238 @@ $starGray_img: "./image/star_gray.png";
 $gi_w: 30%;
 $gi_h: 100vh;
 
-$di_w: 70%;
-$di_h: 100vh;
-
 $profile_img_w: 217px;
 $profile_img_h: 217px;
 
 $call_inf_w: 65%;
 $call_inf_h: 254px;
 
-$padding: 15px;
+$padding: 14px;
 
-@media screen and (min-width: 900px) {
-  .App {
+$di_w: 70%;
+$di_h: 100vh;
+
+.App {
+  display: flex;
+}
+
+.gi {
+  position: fixed;
+  right: 0px;
+  width: $gi_w;
+
+  height: $gi_h;
+  background-color: $color3;
+}
+.gi .profile_img {
+  width: $profile_img_w;
+  height: $profile_img_h;
+  background-image: url($profile_img);
+  background-position: center;
+  background-size: cover;
+  margin: 50px auto;
+}
+.gi .call_inf {
+  width: $call_inf_w;
+  min-width: 265px;
+  height: $call_inf_h;
+  background-color: $color4;
+  border-radius: 20px;
+  margin: 0 auto;
+  .socialMedia {
+    height: 25px;
     display: flex;
-    
-  }
+    justify-content: center;
+    padding-top: $padding;
+    padding-bottom: $padding;
+    border-bottom: 1px solid $color1;
 
-  .gi {
-    position: fixed;
-    right: 0px;
-    width: $gi_w;
-    height: $gi_h;
-    background-color: $color3;
-  }
-  .gi .profile_img {
-    width: $profile_img_w;
-    height: $profile_img_h;
-    background-image: url($profile_img);
-    background-position: center;
-    background-size: cover;
-    margin: 50px auto;
-  }
-  .gi .call_inf {
-    width: $call_inf_w;
-    min-width: 280px;
-    height: $call_inf_h;
-    background-color: $color4;
-    border-radius: 20px;
-    margin: 0 auto;
-    .socialMedia {
-      height: 25px;
-      display: flex;
-      justify-content: center;
-      padding-top: $padding;
-      padding-bottom: $padding;
-      border-bottom: 1px solid $color1;
-
-      img {
-        margin-right: 11px;
-      }
-
-      #telegram {
-        content: url(./image/Telegram.png);
-      }
-
-      #instagram {
-        content: url(./image/Instagram.png);
-      }
-      #gitHub {
-        content: url(./image/GitHub.png);
-      }
-      #linkedin {
-        content: url(./image/LinkedIn.png);
-      }
+    img {
+      margin-right: 11px;
     }
-    .ael {
-      padding-right: $padding;
-      div {
-        height: 46px;
 
-        text-align: right;
-        span {
-          margin-right: $padding;
-          height: 46px;
-        }
-        img {
-          position: relative;
-          top: 50%;
-          transform: translate(0, -50%);
-        }
+    #telegram {
+      content: url(./image/Telegram.png);
+    }
 
-        #phoneImg {
-          content: url(./image//Phone.png);
-        }
-        #emailImg {
-          content: url(./image/atSign.png);
-        }
-        #locationImg {
-          content: url(./image/Address.png);
-        }
-      }
+    #instagram {
+      content: url(./image/Instagram.png);
+    }
+    #gitHub {
+      content: url(./image/GitHub.png);
+    }
+    #linkedin {
+      content: url(./image/LinkedIn.png);
     }
   }
-
-  .di {
-    position: relative;
-    width: $di_w;
-    height: $di_h;
-    background-color: $color4;
-    ;
-    
+  .ael {
+    padding-right: $padding;
     div {
-      .topic {
-        text-align: center;
+      height: 46px;
 
-        font-family: Byekan, sans-serif;
-        font-size: 24px;
+      text-align: right;
+      span {
+        margin-right: $padding;
+        height: 46px;
       }
-    }
-    .p {
+      img {
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+
+      #phoneImg {
+        content: url(./image//Phone.png);
+      }
+      #emailImg {
+        content: url(./image/atSign.png);
+      }
+      #locationImg {
+        content: url(./image/Address.png);
+      }
     }
   }
+}
 
-  .items {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-self: end;
-    width: 70%;
-    max-width: 750px;
-    min-width: 312px;
-    margin: 0 auto;
-  
-  
+.di {
+  position: relative;
+  width: $di_w;
 
-    .item {
-      width: 312px;
-      height: 120px;
-      border-radius: $padding;
-      border: 1px solid $color1;
+  height: $di_h;
+
+
+  div {
+    .topic {
+      text-align: center;
+      font-family: Byekan, sans-serif;
+      font-size: 24px;
+    }
+
+    .items {
       display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-self: end;
+      width: 100%;
+      max-width: 750px;
+      min-width: 312px;
+      margin: 0 auto;
 
-      margin-top: $padding;
-      margin-bottom: $padding;
-      div {
-        position: relative;
-        text-align: right;
-        top: 50%;
-        margin-right: 10px;
-        transform: translateY(-50%);
-      }
-      .img {
-        order: 2;
-        width: 68px;
-        height: 68px;
-        border-radius: 50%;
-        // border: 2pt solid $color1;
-      }
 
-      .react {
-        background-image: url(./image/react.png);
-        background-position: center;
-        background-size: cover;
-      }
-      .node {
-        background-image: url(./image/node.png);
-        background-position: center;
-        background-size: cover;
-      }
-      .docker {
-        background-image: url(./image/docker.png);
-        background-position: center;
-        background-size: cover;
-      }
-      .typescript {
-        background-image: url(./image/typescript.png);
-        background-position: center;
-        background-size: cover;
-      }
+      .item {
+        width: 312px;
+        height: 120px;
+        border-radius: $padding;
+        border: 1px solid $color1;
+        display: flex;
 
-      .projectImg {
-        background-image: url(./image/developerMode.png);
-        background-position: center;
-        background-size: cover;
-      }
-
-      .inf {
-        width: 213px;
+        margin-top: $padding;
+        margin-bottom: $padding;
         div {
-          top: 0px;
-          transform: translateY(0px);
-          margin-top: 5px;
-          margin-bottom: 5px;
-        }
-        p {
+          position: relative;
           text-align: right;
-          margin: 0px;
+          top: 50%;
+          margin-right: 10px;
+          transform: translateY(-50%);
+        }
+        .img {
+          order: 2;
+          width: 68px;
+          height: 68px;
+          border-radius: 50%;
+          // border: 2pt solid $color1;
         }
 
-
-        
-        p{
-          font-family: Byekan;
-          font-size: 15;
-          color: $color1;
-
-          text-align: right;
+        .react {
+          background-image: url(./image/react.png);
+          background-position: center;
+          background-size: cover;
         }
-        a {
-          text-decoration: none;
+        .node {
+          background-image: url(./image/node.png);
+          background-position: center;
+          background-size: cover;
         }
-        .title {
-          margin-top: $padding;
-          font-family: "Roboto", sans-serif;
-          font-size: $padding;
-          color: black;
+        .docker {
+          background-image: url(./image/docker.png);
+          background-position: center;
+          background-size: cover;
+        }
+        .typescript {
+          background-image: url(./image/typescript.png);
+          background-position: center;
+          background-size: cover;
         }
 
-        .rate {
-          img {
-            width: $padding;
-            height: $padding;
-            content: url($starGold_img);
+        .projectImg {
+          background-image: url(./image/developerMode.png);
+          background-position: center;
+          background-size: cover;
+        }
+
+        .inf {
+          width: 213px;
+          div {
+            top: 0px;
+            transform: translateY(0px);
+            margin-top: 5px;
+            margin-bottom: 5px;
+          }
+
+          p {
+            text-align: right;
+            margin: 0px;
+            font-family: Byekan;
+            font-size: 15;
+            color: $color1;
+            text-align: right;
+          }
+
+          .title {
+            margin-top: $padding;
+            margin-bottom: 7px;
+            font-family: "Roboto", sans-serif;
+            font-size: $padding;
+            color: black;
+          }
+          a {
+            font-family: Byekan;
+            font-size: 15;
+            text-decoration: none;
+          }
+
+          .rate {
+            img {
+              width: $padding;
+              height: $padding;
+              content: url($starGold_img);
+            }
           }
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  $gi_w: 40%;
+  $di_w: 60%;
+  .gi {
+    width: $gi_w;
+  }
+  .di {
+    width: $di_w;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  $gi_w: 45%;
+  $di_w: 55%;
+  .gi {
+    width: $gi_w;
+  }
+  .di {
+    width: $di_w;
   }
 }
