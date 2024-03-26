@@ -89,6 +89,36 @@ function App() {
                 <p>به مدت یک ماه در این حوزه فعالیت داشته </p>
               </div>
             </div>
+
+            <div className="item" id="item5">
+              <div className="img gitHub"></div>
+              <div className="inf">
+                <p className="title">Github</p>
+                <div className="rate">
+                  <img alt="" />
+                  <img alt="" />
+                  <img alt="" />
+                  <img alt="" />
+                  <img alt="" />
+                </div>
+                <p>به مدت یک ماه در این حوزه فعالیت داشته </p>
+              </div>
+            </div>
+
+            <div className="item" id="item6">
+              <div className="img js"></div>
+              <div className="inf">
+                <p className="title">JavaScript</p>
+                <div className="rate">
+                  <img alt="" />
+                  <img alt="" />
+                  <img alt="" />
+                  <img alt="" />
+                  <img alt="" />
+                </div>
+                <p>به مدت یک ماه در این حوزه فعالیت داشته </p>
+              </div>
+            </div>
           </div>
         </div>
         <div className="p">
@@ -101,7 +131,11 @@ function App() {
 
                 <p>مهارت های استفاده شده</p>
                 <p>reactjs , sass , figma </p>
-                <a target="_blank" href="https://github.com/yousefem/resum">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/yousefem/resum"
+                >
                   بیش تر
                 </a>
               </div>
@@ -122,9 +156,7 @@ function App() {
               <div className="inf">
                 <p className="title">title</p>
 
-                <p>
-                  من چهار سال 
-                </p>
+                <p>من چهار سال</p>
                 <a href="http://google.com">بیش تر</a>
               </div>
             </div>

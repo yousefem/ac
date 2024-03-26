@@ -37,6 +37,7 @@ $di_h: 100vh;
 
 .App {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .gi {
@@ -123,7 +124,6 @@ $di_h: 100vh;
 
   height: $di_h;
 
-
   div {
     .topic {
       text-align: center;
@@ -134,7 +134,7 @@ $di_h: 100vh;
     .items {
       display: flex;
       flex-direction: row-reverse;
-      justify-content: space-around;
+      justify-content: space-evenly;
       flex-wrap: wrap;
       align-self: end;
       width: 100%;
@@ -142,16 +142,16 @@ $di_h: 100vh;
       min-width: 312px;
       margin: 0 auto;
 
-
       .item {
         width: 312px;
         height: 120px;
         border-radius: $padding;
         border: 1px solid $color1;
         display: flex;
-
         margin-top: $padding;
         margin-bottom: $padding;
+
+
         div {
           position: relative;
           text-align: right;
@@ -186,6 +186,18 @@ $di_h: 100vh;
           background-image: url(./image/typescript.png);
           background-position: center;
           background-size: cover;
+        }
+
+        .gitHub {
+          background-image: url(./image/gitHubLogo.png);
+          background-position: center;
+          background-size: cover;
+        }
+        .js{
+          background-image: url(./image/JavaScriptLogo.png);
+          background-position: center;
+          background-size: cover;
+
         }
 
         .projectImg {
@@ -258,4 +270,18 @@ $di_h: 100vh;
   .di {
     width: $di_w;
   }
+}
+
+@media screen and (max-width: 610px){
+  $gi_w: 100%;
+  $di_w: 100%;
+  .gi {
+    position: relative;
+    width: $gi_w;
+  }
+  .di {
+    position: relative;
+    width: $di_w;
+  }
+
 }
